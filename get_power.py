@@ -8,7 +8,7 @@ from influxdb import InfluxDBClient
 
 
 def getToken():
-    f = open("token")
+    f = open("/usr/local/bin/token")
     token = f.read()
     f.close()
     return token.strip()
